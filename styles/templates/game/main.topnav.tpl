@@ -30,7 +30,7 @@
                         <div class="stock_percentage stock_percentage_right" style="width:0;display:none;";"></div>
 						{else}
 						
-                        <div class="stock_percentage stock_percentage_left" style="width:{$resouceData.percenta}%;">enerģija</div>
+                        <div class="stock_percentage stock_percentage_left" style="width:{$resouceData.percenta}%;"></div>
 						{/if}
 							
 							
