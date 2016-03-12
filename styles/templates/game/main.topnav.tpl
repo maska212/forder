@@ -21,17 +21,24 @@
 									{$resouceData.current = $resouceData.max + $resouceData.used}   
 
 									<div id="res_block_{$resouceData.name}" class="bloc_res">
-                		<div class="ico_res tooltip"></div>   
+                		<div class="ico_res"></div>   
                                         
                         <div class="stock_res">
 						
-{if $resouceData.used1 > $resouceData.max}
-						<div class="stock_percentage stock_percentage_left" style="width:{$resouceData.percenta}%;"></div>
+
+                      
+
+						
+                      {if $resouceData.used1 > $resouceData.max}
+					  {$resouceData.percent_minus = $resouceData.percent - (2 * $resouceData.percent)}
+				<!---	  -11 - (2 x -11) = 11  ---> 
+						<div class="stock_percentage stock_percentage_left" style="width:{$resouceData.percent_minus}%;"></div>
                         <div class="stock_percentage stock_percentage_right" style="width:0;display:none;";"></div>
 						{else}
-						
-                        <div class="stock_percentage stock_percentage_left" style="width:{$resouceData.percenta}%;"></div>
+						<div class="stock_percentage stock_percentage_left" style="width:0;display:none;";"></div>
+                        <div class="stock_percentage stock_percentage_right" style="width:{$resouceData.percent}%;"></div>
 						{/if}
+
 							
 							
 							
