@@ -1,5 +1,3 @@
-# forder
-- xterium
 # update v0.1
 - energy bar % counting correct
 - energy bar colors (minus and plus %)
